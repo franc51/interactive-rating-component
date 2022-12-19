@@ -1,5 +1,9 @@
 # Frontend Mentor - Interactive rating component
 
+1. created style component - done
+2. added rating functionality - done
+3. added thank you page - not done
+
 ![Design preview for the Interactive rating component coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
