@@ -38,14 +38,9 @@ body {
 .padded-container p {
   color: var(--medium-gray);
 }
-.star-button {
-  display: flex;
-  justify-content: space-evenly;
-}
 
 .star {
   text-align: center;
-  background-color: var(--hard-gray);
   border-radius: 30rem;
   width: 3.2rem;
   font-weight: 700;
@@ -59,7 +54,7 @@ body {
   color: white;
 }
 
-button {
+.buton {
   width: 22rem;
   height: 3rem;
   border-radius: 2rem;
@@ -74,15 +69,42 @@ button {
   margin: 2rem 0rem;
   cursor: pointer;
 }
+.buton:hover {
+  background-color: var(--white);
+  color: black;
+}
 .submit-button {
   text-align: center;
   display: flex;
 }
-button:hover {
-  background-color: var(--white);
-  color: black;
+
+.stars {
+  border-radius: 50%;
+  border: none;
+  height: 3rem;
+  width: 3rem;
+  font-family: "Overpass";
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--medium-gray);
+  cursor: pointer;
+  background-color: var(--hard-gray);
+}
+
+.stars:hover {
+  background-color: var(--medium-gray);
+  color: var(--white);
 }
 
 .active {
-  background-color: orange;
+  background-color: var(--orange);
+  color: var(--white);
+}
+.active:hover {
+  background-color: var(--orange);
+  color: var(--white);
+}
+.star-button {
+  display: flex;
+  justify-content: space-evenly;
 }

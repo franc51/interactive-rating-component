@@ -1,14 +1,20 @@
-function selectRating(e) {
-  resetRatings();
-  e.target.classList.add("active");
-}
+let prevButton = null;
 
-function resetRatings() {
-  // Checks selected items
-  const selectedRatings = document.querySelectorAll(".active");
-  selectedRatings.forEach((selectedRating) => {
-    selectedRating.classList.remove("active");
-  });
-}
+const wrapper = document.getElementById("star-button");
 
-selectRating();
+wrapper.addEventListener("click", (e) => {
+  const isButton = e.target.nodeName === "BUTTON";
+
+  if (!isButton) {
+    return;
+  }
+
+  e.target.classList.add("active"); // Add .active CSS Class
+
+  if (prevButton !== null) {
+    prevButton.classList.remove("active"); // Remove .active CSS Class
+  }
+  console.log(e);
+
+  prevButton = e.target;
+});
